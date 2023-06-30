@@ -1,0 +1,92 @@
+* {
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;  
+    font-weight: 600;  
+}
+
+header {
+    height: 130px;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    min-width: 500px;
+    max-width: 700px;
+    box-shadow: rgba(0, 0, 0, 0.27) 0px 4px 7px 0px;
+}
+  
+.cell {
+    flex-basis: calc(100% / 16);
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid black;
+    background-color: white;
+}
+
+.leftBGroup, 
+.rightBGroup,
+.penColor,
+.bgColor {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 40px;
+    width: 100%;
+    align-content: center;
+}
+
+.button {
+    height: 40px;
+    max-width: 240px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.27) 0px 4px 7px 0px;
+}
+
+.divSize_no, .colorGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.selectedValue {
+    text-align: center;
+    margin: 0;
+}
+
+.colorSelect, 
+.bgColorSelect {
+    display: flex;
+    align-items: center;
+}
+
+.leftBGroup > .clear {
+    max-width: 100%;
+    background-color: #FF4C4C;
+    color: white;
+}
+
+.label {
+    margin-left: 10px;
+    min-width: auto;
+    text-align: right;
+}
+
+footer {
+    height: 130px;
+}
