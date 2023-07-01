@@ -22,6 +22,7 @@ header {
 .gridContainer {
     display: flex;
     flex-wrap: wrap;
+    /* outline: 1px solid black; */
     flex-grow: 2;
     min-width: 500px;
     max-width: 700px;
@@ -29,19 +30,16 @@ header {
 }
   
 .cell {
-    flex-basis: calc(100% / 16);
     aspect-ratio: 1;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     background-color: white;
 }
 
 .leftBGroup, 
-.rightBGroup,
-.penColor,
-.bgColor {
+.rightBGroup {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -54,9 +52,18 @@ header {
     height: 40px;
     max-width: 240px;
     border: none;
+    flex: 1;
     border-radius: 7px;
     box-shadow: rgba(0, 0, 0, 0.27) 0px 4px 7px 0px;
+    padding: 12px;
 }
+
+.separator {
+    height: 1px;
+    width: 100%;
+    background-color: #cfcdcd;
+    margin: 10px 0;
+  }
 
 .divSize_no, .colorGroup {
     display: flex;
@@ -73,18 +80,13 @@ header {
 .bgColorSelect {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .leftBGroup > .clear {
     max-width: 100%;
     background-color: #FF4C4C;
     color: white;
-}
-
-.label {
-    margin-left: 10px;
-    min-width: auto;
-    text-align: right;
 }
 
 footer {
